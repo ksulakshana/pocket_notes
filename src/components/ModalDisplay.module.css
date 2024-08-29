@@ -124,7 +124,6 @@ ul li{
     background: #001F8B;
     width: 7em;
     border-radius: 0.5em;
-    opacity: 0px;
     font-family: "Roboto", sans-serif;
     font-size: 1em;
     font-weight: 400;
@@ -284,7 +283,6 @@ ul li{
         background: #001F8B;
         width: 7em;
         border-radius: 0.5em;
-        opacity: 0px;
         font-family: "Roboto", sans-serif;
         font-size: 1em;
         font-weight: 400;
