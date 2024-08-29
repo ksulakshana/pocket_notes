@@ -1,0 +1,36 @@
+.container{
+    background: #DAE5F5;
+    overflow: auto;
+}
+
+.notes{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px 0px #00000040;
+    height: fit-content;
+    margin:1em;
+}
+
+.content{
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+font-weight: 400;
+line-height: 1.4em;
+letter-spacing: 0.035em;
+text-align: left;
+color: #000000;
+padding:1em;
+height:100%;
+width: auto;
+    overflow-wrap: break-word;
+}
+
+.createdDate{
+    color: #353535;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1.4em;
+    letter-spacing: 0.02em;
+    text-align: right;
+    padding-right: 1em;
+}

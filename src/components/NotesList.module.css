@@ -1,0 +1,56 @@
+.container{
+    width:100%;
+    height:80vh;
+    overflow: auto;
+}
+
+.subcontainer{
+    margin: 0 2em;
+}
+.subcontainer p{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 0.8em;
+}
+
+.noteabbreviation{
+    /* background: #16008B; */
+    border-radius: 2em;
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 2em;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding: 0.2em;
+    text-transform:uppercase;
+}
+
+.noteName{
+    cursor: pointer;
+    line-height: 2.2em;
+}
+.addNewButton{
+    background: #16008B;
+    border-radius: 2em;
+    width: 4em;
+    height: 4em;
+    margin: 1em;
+    text-align: center;
+    position: fixed;
+    bottom: 1em;
+    left: 12em;
+}
+.addNewButton span{
+    font-family: Roboto;
+    font-size: 3.3em;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    cursor: pointer;
+}

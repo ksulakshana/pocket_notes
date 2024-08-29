@@ -1,0 +1,298 @@
+.container{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.modalContainer{
+    width: 40vw;
+    height: 40vh;
+    border-radius: 6px;
+    background-color: white;
+    padding-left: 2em;
+    padding-top: 0.5em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title{
+    margin-left: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:1em;
+}
+
+.title button{
+    width:2em;
+    height:2em;
+    float:right;
+    margin-right: 4em;
+}
+.groupNameDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:1em;
+    margin:1em;
+}
+
+.groupNameDiv input{
+    width: 55%;
+    /* height: 51px; */
+    top: 439px;
+    left: 641px;
+    /* gap: 0px; */
+    border-radius: 22px ;
+    border: 2px solid #CCCCCC;
+    padding:0.5em;
+}
+.chooseColorDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:1em;
+    margin:1em;
+}
+
+label{
+    line-height: 2em;
+}
+.chooseColorDiv ul{
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+ul li{
+    list-style: none;
+    width:1.5em;
+    height:1.5em;
+    border-radius: 1.5em;
+    display: inline-block;
+    margin:0.3em;
+}
+.purple{
+    background: #B38BFA;
+    line-height: 0.2em;
+    cursor: pointer;
+}
+.pink{
+    background: #FF79F2;
+    line-height: 0.2em;
+    cursor: pointer;
+}
+.aqua{
+    background: #43E6FC;
+    line-height: 0.2em;
+    cursor: pointer;
+}
+.brown{
+    background: #F19576;
+    line-height: 0.2em;
+    cursor: pointer;
+}
+.blue{
+    background: #0047FF;
+    line-height: 0.2em;
+    cursor: pointer;
+}
+.lblue{
+    background: #6691FF;
+    line-height: 0.2em;
+    cursor: pointer;
+}
+
+.createButton{
+    width:7em;
+    float: right;
+    margin-right: 2em;
+}
+
+.createBtn{
+    background: #001F8B;
+    width: 7em;
+    border-radius: 0.5em;
+    opacity: 0px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 0.035em;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 2em;
+    cursor: pointer;
+}
+
+/****************Media Queries*********************/
+@media only screen and (max-width: 600px){
+    body{
+        visibility: hidden;
+    }
+    .container{
+        visibility: visible;
+        background-color: rgba(0, 0, 0, 0.7);
+        width: 100vw;
+        height: 100vh;
+        z-index: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+    
+    .centered {
+        visibility: visible;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    .modalContainer{
+        visibility: visible;
+        width: 80vw;
+        height: 35vh;
+        border-radius: 6px;
+        background-color: white;
+        padding: 1em;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .modalContainer div:first-child{
+        width: 100%;
+    position: relative;
+    right: 1em;
+    }
+    .title{
+        visibility: visible;
+        margin-left: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap:1em;
+    }
+    
+    .title button{
+        visibility: visible;
+        width:2em;
+        height:2em;
+        float:right;
+        margin-right: 4em;
+    }
+    .groupNameDiv{
+        visibility: visible;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap:1em;
+        margin:1em;
+    }
+    
+    .groupNameDiv input{
+        visibility: visible;
+        width: 55%;
+        border-radius: 22px ;
+        border: 2px solid #CCCCCC;
+        padding:0.5em;
+        width: 50%;
+    }
+    .chooseColorDiv{
+        visibility: visible;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap:1em;
+        margin:1em;
+        position: relative;
+        right:1em;
+    }
+
+    label{
+        visibility: visible;
+        line-height: 1em;
+        width: 50%;
+    }
+    .chooseColorDiv ul{
+        visibility: visible;
+        display: inline;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+    }
+    ul li{
+        visibility: visible;
+        list-style: none;
+        width:1.5em;
+        height:1.5em;
+        border-radius: 1.5em;
+        display: inline-block;
+        margin:0.3em;
+    }
+    .purple{
+        background: #B38BFA;
+        line-height: 0.2em;
+        cursor: pointer;
+    }
+    .pink{
+        background: #FF79F2;
+        line-height: 0.2em;
+        cursor: pointer;
+    }
+    .aqua{
+        background: #43E6FC;
+        line-height: 0.2em;
+        cursor: pointer;
+    }
+    .brown{
+        background: #F19576;
+        line-height: 0.2em;
+        cursor: pointer;
+    }
+    .blue{
+        background: #0047FF;
+        line-height: 0.2em;
+        cursor: pointer;
+    }
+    .lblue{
+        background: #6691FF;
+        line-height: 0.2em;
+        cursor: pointer;
+    }
+    
+    .createButton{
+        width:7em;
+        float: right;
+        margin-right: 2em;
+    }
+    
+    .createBtn{
+        background: #001F8B;
+        width: 7em;
+        border-radius: 0.5em;
+        opacity: 0px;
+        font-family: "Roboto", sans-serif;
+        font-size: 1em;
+        font-weight: 400;
+        line-height: 1.5em;
+        letter-spacing: 0.035em;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 0 2em;
+        cursor: pointer;
+    }
+}

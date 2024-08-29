@@ -1,0 +1,201 @@
+.container{
+    height:100vh;
+    width:100vw;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.noteListSection{
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.headingDiv{
+    height:20vh;
+}
+
+.heading{
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 41.02px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    cursor:pointer;
+}
+
+/**** Note List component Styles ***/
+
+.container1{
+    width:100%;
+    height:80vh;
+    overflow: auto;
+}
+
+.subcontainer{
+    margin: 0 2em;
+}
+.subcontainer p{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 0.8em;
+}
+
+.noteabbreviation{
+    background: #16008B;
+    border-radius: 2em;
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 2em;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding: 0.2em;
+    text-transform:uppercase
+}
+
+.noteName{
+    cursor: pointer;
+    line-height: 2.2em;
+}
+
+.addNewButton{
+    background: #16008B;
+    border-radius: 2em;
+    width: 4em;
+    height: 4em;
+    margin: 1em;
+    text-align: center;
+    position: fixed;
+    bottom: 1em;
+    left: 12em;
+}
+.addNewButton span{
+    font-family: "Roboto", sans-serif;
+    font-size: 3.3em;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        visibility: hidden;
+    }
+    svg{
+        visibility: hidden;
+    }
+    .container{
+        visibility: visible;
+        height:100vh;
+        width:100vw;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .noteListSection{
+        visibility: visible;
+        grid-area: 1 / 1 / 2 / 2;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+    }
+    
+    .headingDiv{
+        visibility: visible;
+        height:20vh;
+        width: 24em;
+    }
+    .heading{
+        visibility: visible;
+        color: #000000;
+        font-family: "Roboto", sans-serif;
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 41.02px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        cursor:pointer;
+    }
+    .container1{
+        visibility: visible;
+        width:100vw;
+        height:100%;
+        overflow: auto;
+    }
+
+    .subcontainer{
+        visibility: visible;
+        margin: 0 2em;
+    }
+    .subcontainer p{
+        visibility: visible;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 0.8em;
+    }
+    
+    .noteabbreviation{
+        visibility: visible;
+        background: #16008B;
+        border-radius: 2em;
+        width: 2em;
+        height: 2em;
+        cursor: pointer;
+        color: #FFFFFF;
+        font-family: "Roboto", sans-serif;
+        font-size: 1em;
+        font-weight: 500;
+        line-height: 2em;
+        letter-spacing: 0.02em;
+        text-align: center;
+        padding: 0.2em;
+        text-transform:uppercase
+    }
+    
+    .noteName{
+        visibility: visible;
+        cursor: pointer;
+        line-height: 2.2em;
+    }
+    
+    .addNewButton{
+        visibility: visible;
+        background: #16008B;
+        border-radius: 2em;
+        width: 4em;
+        height: 4em;
+        margin: 1em;
+        text-align: center;
+        position: fixed;
+        bottom: 50em;
+        left: 16em;
+    }
+    .addNewButton span{
+        visibility: visible;
+        font-family: "Roboto", sans-serif;
+        font-size: 3.3em;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    
+}
